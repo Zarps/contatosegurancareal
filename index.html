@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Envio de formulário</title>
+</head>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light topo sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto d-flex align-items-center">
+            <li class="nav-item active">
+            <img src="./assets/Logo1 (2).png"
+            alt="imagem do user" width="50px" height="50px" class="img-fluid rounded-circle">
+            </li>
+    
+            <li class="nav-item pl-3">
+                <a href="#home" class="link">
+                    <span class="mask">
+                    <div class="link-container">
+                <span class="link-title1 title links m-0 font-weight-bold fs-16 ">Inicio</span>
+                <span class="link-title2 title m-0 font-weight-bold fs-16">Inicio</span>
+                </div>
+                </span>
+                </a>
+            </li>
+    
+            <li class="nav-item pl-3">
+              <a href="#Info" class="link">
+              <span class="mask">
+              <div class="link-container">
+          <span class="link-title1 title links m-0 font-weight-bold fs-16 ">Info</span>
+          <span class="link-title2 title m-0 font-weight-bold fs-16">Info</span>
+          </div>
+          </span>
+          </a>
+          </li>
+    
+            <li class="nav-item pl-3">
+                <a href="#nos" class="link">
+                    <span class="mask">
+                    <div class="link-container">
+                <span class="link-title1 title links m-0 font-weight-bold fs-16 ">Sobre</span>
+                <span class="link-title2 title m-0 font-weight-bold fs-16">Sobre</span>
+                </div>
+                </span>
+                </a>
+            </li>
+    
+            <li class="nav-item pl-3">
+                <a href="#contact" class="link">
+                <span class="mask">
+                <div class="link-container">
+            <span class="link-title1 title links m-0 font-weight-bold fs-16 ">Contato</span>
+            <span class="link-title2 title m-0 font-weight-bold fs-16">Contato</span>
+            </div>
+            </span>
+            </a>
+            </li>
+    
+        </ul>
+    
+        <ul class="navbar-nav ml-auto d-flex align-items-center">
+            <li class="nav-item pl-3">
+    
+                <a routerLink="/login" class="link">
+                    <span class="mask">
+                    <div class="link-container">
+                        <span class="link-title1 title m-0 font-weight-bold fs-16">Entrar <i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="link-title2 title m-0 font-weight-bold fs-16">Entrar <i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    </div>
+                    </span>
+                </a>
+            </li>
+    
+            <li class="nav-item pl-3">
+                <a routerLink="/cadastro" class="link">
+                    <span class="mask">
+                    <div class="link-container">
+                        <span class="link-title1 title m-0 font-weight-bold fs-16">Cadastre-se</span>
+                        <span class="link-title2 title m-0 font-weight-bold fs-16">Cadastre-se</span>
+                        </div>
+                    </span>
+                </a>
+        </li>
+        </ul>
+        </div>
+    </nav>
+    
+
+<div id="Contato" class="container-fluid pb-5">
+    <div class="row d-flex align-itens-center justify-content-center mt-5">
+    
+        <div class="col-md-8">
+    
+    
+    <form action="https://formsubmit.co/wes.alves.rios@gmail.com" method="POST" id="contact">
+    
+        <div class="row justify-content-center">
+            <div class="col-md-6 ">
+    
+                <div class="row">
+                    <div class="col-md-12 justify-content-center">
+                        <h4 class="text-center mb-5 mt-5" style="font-size: 42px;">Envie sua mensagem</h4>
+                    </div>
+                </div>
+
+                <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, agradeçemos o contato e logo responderemos!">
+    
+                <div class="form-group">
+                    <label class="text-light" for="nome"><strong>Nome</strong></label>
+                    <input class="form-control mb-2" type="text" name="nome" id="nome" placeholder="Seu nome*">
+                </div>
+    
+                <div class="form-group">
+                    <label class="text-light" for="email"><strong>Email</strong></label>
+                    <input class="form-control mb-2" type="email" name="email" id="email" placeholder="Digite seu email@example.com*">
+                </div>
+    
+        <div class="form-group">
+        <label class="text-light"  for="textarea"><strong>Mensagem</strong></label>
+        <textarea class="form-control mb-2" name="mensagem" placeholder="Digite sua mensagem" rows="3"></textarea>
+        </div>
+        <div class="form-group d-flex justify-content-end pb-5">
+            <button type="submit" class="btn btn-outline-warning text-light"><strong>Enviar</strong></button>
+        </div>
+        </div>
+        </div>
+    
+    </form>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+
+</html>
